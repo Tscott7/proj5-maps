@@ -1,0 +1,379 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', '-g', 'jake' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose cache add [ 'jake', null ]
+5 verbose cache add name=undefined spec="jake" args=["jake",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'jake',
+6 verbose parsed url   path: 'jake',
+6 verbose parsed url   href: 'jake' }
+7 silly lockFile c8d99c2f-jake jake
+8 verbose lock jake /home/Taylor/.npm/c8d99c2f-jake.lock
+9 silly lockFile c8d99c2f-jake jake
+10 silly lockFile c8d99c2f-jake jake
+11 verbose addNamed [ 'jake', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 407019af-jake jake@
+14 verbose lock jake@ /home/Taylor/.npm/407019af-jake.lock
+15 silly addNameRange { name: 'jake', range: '*', hasData: false }
+16 verbose url raw jake
+17 verbose url resolving [ 'https://registry.npmjs.org/', './jake' ]
+18 verbose url resolved https://registry.npmjs.org/jake
+19 info trying registry request attempt 1 at 21:29:37
+20 http GET https://registry.npmjs.org/jake
+21 http 200 https://registry.npmjs.org/jake
+22 silly registry.get cb [ 200,
+22 silly registry.get   { server: 'nginx/1.10.1',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'last-modified': 'Tue, 04 Jul 2017 14:33:28 GMT',
+22 silly registry.get     etag: '"595ba738-1b0a8"',
+22 silly registry.get     'cache-control': 'max-age=300',
+22 silly registry.get     'content-length': '110760',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     date: 'Wed, 01 Nov 2017 04:29:37 GMT',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     age: '0',
+22 silly registry.get     connection: 'keep-alive',
+22 silly registry.get     'x-served-by': 'cache-sea1039-SEA',
+22 silly registry.get     'x-cache': 'MISS',
+22 silly registry.get     'x-cache-hits': '0',
+22 silly registry.get     'x-timer': 'S1509510578.717083,VS0,VE32',
+22 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+23 silly addNameRange number 2 { name: 'jake', range: '*', hasData: true }
+24 silly addNameRange versions [ 'jake',
+24 silly addNameRange   [ '0.1.0',
+24 silly addNameRange     '0.1.2',
+24 silly addNameRange     '0.1.3',
+24 silly addNameRange     '0.1.4',
+24 silly addNameRange     '0.1.5',
+24 silly addNameRange     '0.1.6',
+24 silly addNameRange     '0.1.7',
+24 silly addNameRange     '0.1.8',
+24 silly addNameRange     '0.1.9',
+24 silly addNameRange     '0.1.10',
+24 silly addNameRange     '0.1.11',
+24 silly addNameRange     '0.1.12',
+24 silly addNameRange     '0.1.13',
+24 silly addNameRange     '0.1.14',
+24 silly addNameRange     '0.1.16',
+24 silly addNameRange     '0.1.17',
+24 silly addNameRange     '0.1.18',
+24 silly addNameRange     '0.1.19',
+24 silly addNameRange     '0.1.20',
+24 silly addNameRange     '0.1.21',
+24 silly addNameRange     '0.1.22',
+24 silly addNameRange     '0.2.2',
+24 silly addNameRange     '0.2.3',
+24 silly addNameRange     '0.2.6',
+24 silly addNameRange     '0.2.7',
+24 silly addNameRange     '0.2.8',
+24 silly addNameRange     '0.2.9',
+24 silly addNameRange     '0.2.10',
+24 silly addNameRange     '0.2.11',
+24 silly addNameRange     '0.2.12',
+24 silly addNameRange     '0.2.15',
+24 silly addNameRange     '0.2.18',
+24 silly addNameRange     '0.2.19',
+24 silly addNameRange     '0.2.20',
+24 silly addNameRange     '0.2.21',
+24 silly addNameRange     '0.2.22',
+24 silly addNameRange     '0.2.23',
+24 silly addNameRange     '0.2.24',
+24 silly addNameRange     '0.2.25',
+24 silly addNameRange     '0.2.27',
+24 silly addNameRange     '0.2.28',
+24 silly addNameRange     '0.2.29',
+24 silly addNameRange     '0.2.30',
+24 silly addNameRange     '0.2.31',
+24 silly addNameRange     '0.2.32',
+24 silly addNameRange     '0.2.33',
+24 silly addNameRange     '0.2.35',
+24 silly addNameRange     '0.3.1',
+24 silly addNameRange     '0.3.2',
+24 silly addNameRange     '0.3.3',
+24 silly addNameRange     '0.3.4',
+24 silly addNameRange     '0.3.5',
+24 silly addNameRange     '0.3.6',
+24 silly addNameRange     '0.3.7',
+24 silly addNameRange     '0.3.8',
+24 silly addNameRange     '0.3.9',
+24 silly addNameRange     '0.3.10',
+24 silly addNameRange     '0.3.11',
+24 silly addNameRange     '0.3.12',
+24 silly addNameRange     '0.3.13',
+24 silly addNameRange     '0.3.14',
+24 silly addNameRange     '0.3.15',
+24 silly addNameRange     '0.3.16',
+24 silly addNameRange     '0.3.17',
+24 silly addNameRange     '0.4.1',
+24 silly addNameRange     '0.4.2',
+24 silly addNameRange     '0.5.1',
+24 silly addNameRange     '0.5.2',
+24 silly addNameRange     '0.5.3',
+24 silly addNameRange     '0.5.4',
+24 silly addNameRange     '0.5.5',
+24 silly addNameRange     '0.5.6',
+24 silly addNameRange     '0.5.7',
+24 silly addNameRange     '0.5.8',
+24 silly addNameRange     '0.5.9',
+24 silly addNameRange     '0.5.10',
+24 silly addNameRange     '0.5.11',
+24 silly addNameRange     '0.5.12',
+24 silly addNameRange     '0.5.13',
+24 silly addNameRange     '0.5.14',
+24 silly addNameRange     '0.5.15',
+24 silly addNameRange     '0.5.16',
+24 silly addNameRange     '0.5.17',
+24 silly addNameRange     '0.5.18',
+24 silly addNameRange     '0.6.1',
+24 silly addNameRange     '0.6.3',
+24 silly addNameRange     '0.6.4',
+24 silly addNameRange     '0.6.5',
+24 silly addNameRange     '0.6.6',
+24 silly addNameRange     '0.6.7',
+24 silly addNameRange     '0.6.8',
+24 silly addNameRange     '0.6.9',
+24 silly addNameRange     '0.6.10',
+24 silly addNameRange     '0.6.11',
+24 silly addNameRange     '0.6.12',
+24 silly addNameRange     '0.7.1',
+24 silly addNameRange     '0.7.2',
+24 silly addNameRange     '0.7.3',
+24 silly addNameRange     '0.7.4',
+24 silly addNameRange     '0.7.5',
+24 silly addNameRange     '0.7.6',
+24 silly addNameRange     '0.7.7',
+24 silly addNameRange     '0.7.8',
+24 silly addNameRange     '0.7.9',
+24 silly addNameRange     '0.7.10',
+24 silly addNameRange     '0.7.11',
+24 silly addNameRange     '0.7.12',
+24 silly addNameRange     '0.7.13',
+24 silly addNameRange     '0.7.14',
+24 silly addNameRange     '0.7.15',
+24 silly addNameRange     '0.7.16',
+24 silly addNameRange     '0.7.17',
+24 silly addNameRange     '0.7.18',
+24 silly addNameRange     '0.7.19',
+24 silly addNameRange     '0.7.20',
+24 silly addNameRange     '8.0.1',
+24 silly addNameRange     '8.0.2',
+24 silly addNameRange     '8.0.3',
+24 silly addNameRange     '8.0.4',
+24 silly addNameRange     '8.0.5',
+24 silly addNameRange     '8.0.6',
+24 silly addNameRange     '8.0.8',
+24 silly addNameRange     '8.0.9',
+24 silly addNameRange     '8.0.10',
+24 silly addNameRange     '8.0.11',
+24 silly addNameRange     '8.0.12',
+24 silly addNameRange     '8.0.14',
+24 silly addNameRange     '8.0.15' ] ]
+25 verbose addNamed [ 'jake', '8.0.15' ]
+26 verbose addNamed [ '8.0.15', '8.0.15' ]
+27 silly lockFile 957957aa-jake-8-0-15 jake@8.0.15
+28 verbose lock jake@8.0.15 /home/Taylor/.npm/957957aa-jake-8-0-15.lock
+29 silly lockFile 80f0c5be-y-npmjs-org-jake-jake-8-0-15-tgz https://registry.npmjs.org/jake/-/jake-8.0.15.tgz
+30 verbose lock https://registry.npmjs.org/jake/-/jake-8.0.15.tgz /home/Taylor/.npm/80f0c5be-y-npmjs-org-jake-jake-8-0-15-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/jake/-/jake-8.0.15.tgz',
+31 verbose addRemoteTarball   'f0da7d58e790ac1a8f86e6ee0f193e5d9230eabb' ]
+32 info retry fetch attempt 1 at 21:29:37
+33 verbose fetch to= /home/Taylor/tmp/npm-3908-gu-NtbCV/1509510577989-0.09527036594226956/tmp.tgz
+34 http GET https://registry.npmjs.org/jake/-/jake-8.0.15.tgz
+35 http 200 https://registry.npmjs.org/jake/-/jake-8.0.15.tgz
+36 verbose tar unpack /home/Taylor/tmp/npm-3908-gu-NtbCV/1509510577989-0.09527036594226956/tmp.tgz
+37 silly lockFile 3f90f0df-7989-0-09527036594226956-package tar:///home/Taylor/tmp/npm-3908-gu-NtbCV/1509510577989-0.09527036594226956/package
+38 verbose lock tar:///home/Taylor/tmp/npm-3908-gu-NtbCV/1509510577989-0.09527036594226956/package /home/Taylor/.npm/3f90f0df-7989-0-09527036594226956-package.lock
+39 silly lockFile f8821b4a-7989-0-09527036594226956-tmp-tgz tar:///home/Taylor/tmp/npm-3908-gu-NtbCV/1509510577989-0.09527036594226956/tmp.tgz
+40 verbose lock tar:///home/Taylor/tmp/npm-3908-gu-NtbCV/1509510577989-0.09527036594226956/tmp.tgz /home/Taylor/.npm/f8821b4a-7989-0-09527036594226956-tmp-tgz.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry
+43 silly gunzTarPerm extractEntry bin/
+44 silly gunzTarPerm extractEntry Jakefile
+45 silly gunzTarPerm extractEntry lib/
+46 silly gunzTarPerm extractEntry Makefile
+47 silly gunzTarPerm extractEntry package.json
+48 silly gunzTarPerm extractEntry README.md
+49 silly gunzTarPerm extractEntry test/
+50 silly gunzTarPerm extractEntry test/concurrent.js
+51 silly gunzTarPerm extractEntry test/exec.js
+52 silly gunzTarPerm extractEntry test/file_task.js
+53 silly gunzTarPerm extractEntry test/helpers.js
+54 silly gunzTarPerm extractEntry test/Jakefile
+55 silly gunzTarPerm extractEntry test/Jakefile.publish
+56 silly gunzTarPerm extractEntry test/Jakefile.rule
+57 silly gunzTarPerm extractEntry test/namespace.js
+58 silly gunzTarPerm extractEntry test/parseargs.js
+59 silly gunzTarPerm extractEntry test/publish_task.js
+60 silly gunzTarPerm extractEntry test/rule.js
+61 silly gunzTarPerm extractEntry test/selfdep.js
+62 silly gunzTarPerm extractEntry test/task_base.js
+63 silly gunzTarPerm extractEntry lib/api.js
+64 silly gunzTarPerm extractEntry lib/jake.js
+65 silly gunzTarPerm extractEntry lib/loader.js
+66 silly gunzTarPerm extractEntry lib/namespace.js
+67 silly gunzTarPerm extractEntry lib/package_task.js
+68 silly gunzTarPerm extractEntry lib/parseargs.js
+69 silly gunzTarPerm extractEntry lib/program.js
+70 silly gunzTarPerm extractEntry lib/publish_task.js
+71 silly gunzTarPerm extractEntry lib/rule.js
+72 silly gunzTarPerm extractEntry lib/task/
+73 silly gunzTarPerm extractEntry lib/test_task.js
+74 silly gunzTarPerm extractEntry lib/utils/
+75 silly gunzTarPerm extractEntry lib/watch_task.js
+76 silly gunzTarPerm extractEntry lib/utils/index.js
+77 silly gunzTarPerm extractEntry lib/utils/logger.js
+78 silly gunzTarPerm extractEntry lib/task/directory_task.js
+79 silly gunzTarPerm extractEntry lib/task/file_task.js
+80 silly gunzTarPerm extractEntry lib/task/index.js
+81 silly gunzTarPerm extractEntry lib/task/task.js
+82 silly gunzTarPerm extractEntry bin/cli.js
+83 silly lockFile 3f90f0df-7989-0-09527036594226956-package tar:///home/Taylor/tmp/npm-3908-gu-NtbCV/1509510577989-0.09527036594226956/package
+84 silly lockFile 3f90f0df-7989-0-09527036594226956-package tar:///home/Taylor/tmp/npm-3908-gu-NtbCV/1509510577989-0.09527036594226956/package
+85 silly lockFile f8821b4a-7989-0-09527036594226956-tmp-tgz tar:///home/Taylor/tmp/npm-3908-gu-NtbCV/1509510577989-0.09527036594226956/tmp.tgz
+86 silly lockFile f8821b4a-7989-0-09527036594226956-tmp-tgz tar:///home/Taylor/tmp/npm-3908-gu-NtbCV/1509510577989-0.09527036594226956/tmp.tgz
+87 verbose tar pack [ '/home/Taylor/.npm/jake/8.0.15/package.tgz',
+87 verbose tar pack   '/home/Taylor/tmp/npm-3908-gu-NtbCV/1509510577989-0.09527036594226956/package' ]
+88 verbose tarball /home/Taylor/.npm/jake/8.0.15/package.tgz
+89 verbose folder /home/Taylor/tmp/npm-3908-gu-NtbCV/1509510577989-0.09527036594226956/package
+90 silly lockFile 3f90f0df-7989-0-09527036594226956-package tar:///home/Taylor/tmp/npm-3908-gu-NtbCV/1509510577989-0.09527036594226956/package
+91 verbose lock tar:///home/Taylor/tmp/npm-3908-gu-NtbCV/1509510577989-0.09527036594226956/package /home/Taylor/.npm/3f90f0df-7989-0-09527036594226956-package.lock
+92 silly lockFile 1dbf4238-ylor-npm-jake-8-0-15-package-tgz tar:///home/Taylor/.npm/jake/8.0.15/package.tgz
+93 verbose lock tar:///home/Taylor/.npm/jake/8.0.15/package.tgz /home/Taylor/.npm/1dbf4238-ylor-npm-jake-8-0-15-package-tgz.lock
+94 silly lockFile 3f90f0df-7989-0-09527036594226956-package tar:///home/Taylor/tmp/npm-3908-gu-NtbCV/1509510577989-0.09527036594226956/package
+95 silly lockFile 3f90f0df-7989-0-09527036594226956-package tar:///home/Taylor/tmp/npm-3908-gu-NtbCV/1509510577989-0.09527036594226956/package
+96 silly lockFile 1dbf4238-ylor-npm-jake-8-0-15-package-tgz tar:///home/Taylor/.npm/jake/8.0.15/package.tgz
+97 silly lockFile 1dbf4238-ylor-npm-jake-8-0-15-package-tgz tar:///home/Taylor/.npm/jake/8.0.15/package.tgz
+98 silly lockFile 3a7bb7af-e-Taylor-npm-jake-8-0-15-package /home/Taylor/.npm/jake/8.0.15/package
+99 verbose lock /home/Taylor/.npm/jake/8.0.15/package /home/Taylor/.npm/3a7bb7af-e-Taylor-npm-jake-8-0-15-package.lock
+100 silly lockFile 3a7bb7af-e-Taylor-npm-jake-8-0-15-package /home/Taylor/.npm/jake/8.0.15/package
+101 silly lockFile 3a7bb7af-e-Taylor-npm-jake-8-0-15-package /home/Taylor/.npm/jake/8.0.15/package
+102 verbose tar unpack /home/Taylor/.npm/jake/8.0.15/package.tgz
+103 silly lockFile e7537dbb-e-Taylor-npm-jake-8-0-15-package tar:///home/Taylor/.npm/jake/8.0.15/package
+104 verbose lock tar:///home/Taylor/.npm/jake/8.0.15/package /home/Taylor/.npm/e7537dbb-e-Taylor-npm-jake-8-0-15-package.lock
+105 silly lockFile 1dbf4238-ylor-npm-jake-8-0-15-package-tgz tar:///home/Taylor/.npm/jake/8.0.15/package.tgz
+106 verbose lock tar:///home/Taylor/.npm/jake/8.0.15/package.tgz /home/Taylor/.npm/1dbf4238-ylor-npm-jake-8-0-15-package-tgz.lock
+107 silly gunzTarPerm modes [ '755', '644' ]
+108 silly gunzTarPerm extractEntry package.json
+109 silly gunzTarPerm extractEntry README.md
+110 silly gunzTarPerm extractEntry Jakefile
+111 silly gunzTarPerm extractEntry Makefile
+112 silly gunzTarPerm extractEntry bin/cli.js
+113 silly gunzTarPerm extractEntry lib/api.js
+114 silly gunzTarPerm extractEntry lib/loader.js
+115 silly gunzTarPerm extractEntry lib/namespace.js
+116 silly gunzTarPerm extractEntry lib/package_task.js
+117 silly gunzTarPerm extractEntry lib/parseargs.js
+118 silly gunzTarPerm extractEntry lib/jake.js
+119 silly gunzTarPerm extractEntry lib/publish_task.js
+120 silly gunzTarPerm extractEntry lib/rule.js
+121 silly gunzTarPerm extractEntry lib/test_task.js
+122 silly gunzTarPerm extractEntry lib/watch_task.js
+123 silly gunzTarPerm extractEntry lib/program.js
+124 silly gunzTarPerm extractEntry lib/task/directory_task.js
+125 silly gunzTarPerm extractEntry lib/task/file_task.js
+126 silly gunzTarPerm extractEntry lib/task/index.js
+127 silly gunzTarPerm extractEntry lib/task/task.js
+128 silly gunzTarPerm extractEntry lib/utils/index.js
+129 silly gunzTarPerm extractEntry lib/utils/logger.js
+130 silly gunzTarPerm extractEntry test/task_base.js
+131 silly gunzTarPerm extractEntry test/selfdep.js
+132 silly gunzTarPerm extractEntry test/concurrent.js
+133 silly gunzTarPerm extractEntry test/exec.js
+134 silly gunzTarPerm extractEntry test/file_task.js
+135 silly gunzTarPerm extractEntry test/rule.js
+136 silly gunzTarPerm extractEntry test/namespace.js
+137 silly gunzTarPerm extractEntry test/parseargs.js
+138 silly gunzTarPerm extractEntry test/publish_task.js
+139 silly gunzTarPerm extractEntry test/helpers.js
+140 silly gunzTarPerm extractEntry test/Jakefile.publish
+141 silly gunzTarPerm extractEntry test/Jakefile.rule
+142 silly gunzTarPerm extractEntry test/Jakefile
+143 silly lockFile e7537dbb-e-Taylor-npm-jake-8-0-15-package tar:///home/Taylor/.npm/jake/8.0.15/package
+144 silly lockFile e7537dbb-e-Taylor-npm-jake-8-0-15-package tar:///home/Taylor/.npm/jake/8.0.15/package
+145 silly lockFile 1dbf4238-ylor-npm-jake-8-0-15-package-tgz tar:///home/Taylor/.npm/jake/8.0.15/package.tgz
+146 silly lockFile 1dbf4238-ylor-npm-jake-8-0-15-package-tgz tar:///home/Taylor/.npm/jake/8.0.15/package.tgz
+147 verbose chmod /home/Taylor/.npm/jake/8.0.15/package.tgz 644
+148 verbose chown /home/Taylor/.npm/jake/8.0.15/package.tgz [ 1000, 1000 ]
+149 silly lockFile 80f0c5be-y-npmjs-org-jake-jake-8-0-15-tgz https://registry.npmjs.org/jake/-/jake-8.0.15.tgz
+150 silly lockFile 80f0c5be-y-npmjs-org-jake-jake-8-0-15-tgz https://registry.npmjs.org/jake/-/jake-8.0.15.tgz
+151 silly lockFile 957957aa-jake-8-0-15 jake@8.0.15
+152 silly lockFile 957957aa-jake-8-0-15 jake@8.0.15
+153 silly lockFile 407019af-jake jake@
+154 silly lockFile 407019af-jake jake@
+155 silly resolved [ { name: 'jake',
+155 silly resolved     description: 'JavaScript build tool, similar to Make or Rake',
+155 silly resolved     keywords: [ 'build', 'cli', 'make', 'rake' ],
+155 silly resolved     version: '8.0.15',
+155 silly resolved     author:
+155 silly resolved      { name: 'Matthew Eernisse',
+155 silly resolved        email: 'mde@fleegix.org',
+155 silly resolved        url: 'http://fleegix.org' },
+155 silly resolved     license: 'Apache-2.0',
+155 silly resolved     bin: { jake: './bin/cli.js' },
+155 silly resolved     main: './lib/jake.js',
+155 silly resolved     scripts: { test: './bin/cli.js test' },
+155 silly resolved     repository: { type: 'git', url: 'git://github.com/jakejs/jake.git' },
+155 silly resolved     preferGlobal: true,
+155 silly resolved     dependencies:
+155 silly resolved      { filelist: '0.0.x',
+155 silly resolved        minimatch: '3.x',
+155 silly resolved        chalk: '0.4.x',
+155 silly resolved        utilities: '1.0.x',
+155 silly resolved        async: '0.9.x' },
+155 silly resolved     devDependencies: { q: '0.9.x' },
+155 silly resolved     engines: { node: '*' },
+155 silly resolved     readme: '### Jake -- the JavaScript build tool for Node.js\n\n[![Build Status](https://travis-ci.org/jakejs/jake.svg?branch=master)](https://travis-ci.org/jakejs/jake)\n\nDocumentation site at [http://jakejs.com](http://jakejs.com/)\n\n### Contributing\n1. [Install node](http://nodejs.org/#download).\n2. Clone this repository `$ git clone git@github.com:jakejs/jake.git`.\n3. Install dependencies `$ npm install`.\n4. Run tests with `$ npm test`.\n5. Start Hacking!\n\n### License\n\nLicensed under the Apache License, Version 2.0\n(<http://www.apache.org/licenses/LICENSE-2.0>)\n',
+155 silly resolved     readmeFilename: 'README.md',
+155 silly resolved     bugs: { url: 'https://github.com/jakejs/jake/issues' },
+155 silly resolved     _id: 'jake@8.0.15',
+155 silly resolved     dist: { shasum: '8050bd8cb1c766d60797fbfe94f286fc17577ffc' },
+155 silly resolved     _from: 'jake@',
+155 silly resolved     _resolved: 'https://registry.npmjs.org/jake/-/jake-8.0.15.tgz' } ]
+156 info install jake@8.0.15 into /usr/local/lib
+157 info installOne jake@8.0.15
+158 info /usr/local/lib/node_modules/jake unbuild
+159 verbose tar unpack /home/Taylor/.npm/jake/8.0.15/package.tgz
+160 silly lockFile 25fc9e58--usr-local-lib-node-modules-jake tar:///usr/local/lib/node_modules/jake
+161 verbose lock tar:///usr/local/lib/node_modules/jake /home/Taylor/.npm/25fc9e58--usr-local-lib-node-modules-jake.lock
+162 silly lockFile 1dbf4238-ylor-npm-jake-8-0-15-package-tgz tar:///home/Taylor/.npm/jake/8.0.15/package.tgz
+163 verbose lock tar:///home/Taylor/.npm/jake/8.0.15/package.tgz /home/Taylor/.npm/1dbf4238-ylor-npm-jake-8-0-15-package-tgz.lock
+164 silly gunzTarPerm modes [ '755', '644' ]
+165 error Error: EACCES, mkdir '/usr/local/lib/node_modules'
+165 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules']
+165 error   errno: 3,
+165 error   code: 'EACCES',
+165 error   path: '/usr/local/lib/node_modules',
+165 error   fstream_type: 'Directory',
+165 error   fstream_path: '/usr/local/lib/node_modules/jake',
+165 error   fstream_class: 'DirWriter',
+165 error   fstream_stack:
+165 error    [ '/usr/lib/nodejs/fstream/lib/writer.js:171:23',
+165 error      '/usr/lib/nodejs/mkdirp/index.js:37:53',
+165 error      'Object.oncomplete (fs.js:107:15)' ] }
+166 error Please try running this command again as root/Administrator.
+167 error System Linux 3.4.0+
+168 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "jake"
+169 error cwd /mnt/c/Users/Taylor/Desktop/2017FCIS322/proj5-mapping
+170 error node -v v0.10.25
+171 error npm -v 1.3.10
+172 error path /usr/local/lib/node_modules
+173 error fstream_path /usr/local/lib/node_modules/jake
+174 error fstream_type Directory
+175 error fstream_class DirWriter
+176 error code EACCES
+177 error errno 3
+178 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules'
+179 error fstream_stack /usr/lib/nodejs/fstream/lib/writer.js:171:23
+179 error fstream_stack /usr/lib/nodejs/mkdirp/index.js:37:53
+179 error fstream_stack Object.oncomplete (fs.js:107:15)
+180 verbose exit [ 3, true ]

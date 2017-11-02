@@ -1,0 +1,17 @@
+/*
+ * A simple style sheet for course schedules 
+ *
+ * Original : M Young, September 2015
+ * Revised:  
+ */
+
+body {
+	background: #EEE; 
+	color: #444;
+	font: normal 85% "Lucida Sans Unicode",sans-serif;
+	margin: 0;
+    height: 720px;
+    width: 1280px;
+}
+
+#mapid { height: 720px; width: 1280px; }

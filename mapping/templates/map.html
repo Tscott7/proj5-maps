@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+    <title>Map</title>
+
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+        #map {
+            height: 100%;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="map"></div>
+    <script>
+        var map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: 44.0448,
+                    lng: -123.0726
+                },
+                zoom: 14
+            });
+            /* Couldn't figure out how to get Jinja to loop through the entries loop properly so I had to hard code in the 
+            3 markers with their own entires. */
+            {% for entry in g.markers %}
+                // Marker 1
+                var pos = {
+                    lat: {{entry.Latitude}},
+                    lng: {{entry.Longitude}}
+                }
+
+                var contentString = "{{entry.Description}}"
+
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString
+                });
+
+                var marker = new google.maps.Marker({
+                    position: pos,
+                    map: map
+                });
+
+                marker.addListener('click', function() {
+                    infowindow.open(map, marker);
+                }); 
+
+                // Marker 2
+                var pos2 = {
+                    lat: {{entry.Latitude2}},
+                    lng: {{entry.Longitude2}}
+                }
+
+                var contentString2 = "{{entry.Description2}}"
+
+                var infowindow2 = new google.maps.InfoWindow({
+                    content: contentString2
+                });
+
+                var marker2 = new google.maps.Marker({
+                    position: pos2,
+                    map: map
+                });
+                
+                marker2.addListener('click', function() {
+                    infowindow2.open(map, marker2);
+                }); 
+
+                // Marker 3
+                var pos3 = {
+                    lat: {{entry.Latitude3}},
+                    lng: {{entry.Longitude3}}
+                }
+
+                var contentString3 = "{{entry.Description3}}"
+
+                var infowindow3 = new google.maps.InfoWindow({
+                    content: contentString3
+                });
+
+                var marker3 = new google.maps.Marker({
+                    position: pos3,
+                    map: map
+                });
+                
+                marker3.addListener('click', function() {
+                    infowindow3.open(map, marker3);
+                }); 
+
+            {% endfor %}
+
+
+            infoWindow = new google.maps.InfoWindow;
+
+            // Try HTML5 geolocation.
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var pos = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+                    var contentString = 'Current Location';
+
+                    var infowindow = new google.maps.InfoWindow({
+                        content: contentString
+                    });
+
+                    var marker = new google.maps.Marker({
+                        position: pos,
+                        map: map,
+                        title: 'Current Location'
+                    });
+                    marker.addListener('click', function() {
+                        infowindow.open(map, marker);
+                    });
+                    map.setCenter(pos);
+                }, function() {
+                    handleLocationError(true, infoWindow, map.getCenter());
+                });
+            } else {
+                // Browser doesn't support Geolocation
+                handleLocationError(false, infoWindow, map.getCenter());
+            }
+        }
+
+        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+            infoWindow.setPosition(pos);
+            infoWindow.setContent(browserHasGeolocation ?
+                'Error: The Geolocation service failed.' :
+                'Error: Your browser doesn\'t support geolocation.');
+            infoWindow.open(map);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{g.api_key|safe}}&callback=initMap" async defer></script>
+</body>
+
+</html>
