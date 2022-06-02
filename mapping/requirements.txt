@@ -7,7 +7,7 @@ chardet==2.2.1
 click==6.7
 colorama==0.2.5
 command-not-found==0.3
-html5lib==0.999
+html5lib==0.99999999
 itsdangerous==0.24
 language-selector==0.1
 pycurl==7.19.3
